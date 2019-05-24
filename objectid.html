@@ -1,7 +1,7 @@
 <script type="text/javascript">
   RED.nodes.registerType('objectid',{
     category: 'function',
-    color: '#3FADB5',
+    color: '#496E49',
     defaults: {
       name: { value: "" },
       property: { value: "payload", validate: RED.validators.typedInput('propertyType') },
@@ -11,7 +11,7 @@
     outputs:1,
     icon: "inject.png",
     label: function() {
-      return this.name || `objectid: ${this.propertyType}.${this.property}`;
+      return this.name || 'objectid: ${this.propertyType}.${this.property}';
     },
     oneditprepare: function() {
       var node = this;
